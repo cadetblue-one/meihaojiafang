@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.big{
+				width: 100%;
+			}
+			.container{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.clearfix{
+				overflow: hidden;
+			}
+			/*导航*/
+			header{
+				height: 20px;
+			}
+			header ul{
+				float: right;
+			}
+			header ul li{
+				position: relative;
+				list-style: none;
+				float: left;
+				padding-left:16px ;
+				margin-left: 20px;
+			}
+			header ul li img{
+				position: absolute;
+			}
+			header ul li .img1{
+				top: 5px;
+				left: 0;
+			}
+			header ul li .img2{
+				top: -35px;
+				left: 0;
+			}
+			header ul li .img3{
+				bottom: 5px;
+				left: 0;
+			}
+			header ul a{
+				font-size: 13px;
+				text-decoration: none;
+			}
+			header ul li a:hover{
+				color: greenyellow;
+			}
+			
+			/*主导导航*/
+			.one img{
+				background: white;
+				padding:5px;
+				vertical-align: bottom;
+			}
+			.one{
+				background:#007D6B;
+			}
+			.nav ul{
+				float: right;
+			}
+			.nav ul li{
+				float: left;
+			}
+			.nav ul li a{
+				display: inline-block;
+				padding: 15px;
+				color: white;
+				border-right: 1px solid white;
+			}
+			/*binner*/
+			.bg{
+				background: url(img/10.png) repeat;
+				height: 300px;
+			}
+			
+			/*主要内容main里的全局样式*/
+			h4{
+				color: #007D6B;
+				padding: 14px 0;
+				border-bottom: 2px solid #007D6B;
+			}
+			h4 img{
+				float: right;
+				padding-top: 8px;
+			}
+			
+			/*产品系列*/
+			article{
+				width: 50%;
+				float: left;
+				margin-right: 4%;
+			}
+			article ul{
+				width: 100%;
+			}
+			article ul li{
+				display: inline-block;
+				width: 30%;
+				margin: 1%;
+				margin-top: 15px;
+			}
+			article ul li img{
+				width: 100%;
+			}
+			
+			/*新闻动态*/
+			aside{
+				width: 45%;
+				float: left;
+			}
+			aside .center{
+				font-size: 14px;
+				margin: 9px 0;
+				padding: 5px 0;
+			}
+			aside .center img{
+				width: 30%;
+				border: 2px solid #ccc;
+				float: left;
+			}
+			aside .center p{
+				float: right;
+				width: 65%;
+			}
+			aside ul li{
+				font-size: 14px;
+				padding: 3px 0;
+				border-bottom: 2px dotted #ccc;
+				width: 100%;
+			}
+			aside ul li a{
+				color: black;
+				display: inline-block;
+				width: 70%;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			aside ul{
+				margin-bottom: 6px;
+			}
+			aside ul li span{
+			float: right;
+			}
+			/*底部*/
+			footer{
+				margin: 0 auto;
+				text-align: center;
+				width: 100%;
+			}
+			footer ul{
+				background: #007D6B;
+			}
+			footer li{
+				display: inline-block;
+				color: white;
+				padding: 16px 0;
+			}
+			footer li a{
+				padding: 0 5px;
+				color: white;
+			}
+			footer li a:hover{
+				color: yellow;
+			}
+			
+			
+			
+			
+			
+			/*ipad*/
+			@media screen and (min-width:640px) and (max-width:788px){
+				.container{
+					width: 100%;
+				}
+				/*主导导航*/
+				.nav img{
+					float: left;
+				}
+				.nav ul {
+					float: left;
+				}
+				.nav ul li:nth-child(1){
+					display: none;
+				}
+				.nav ul li:nth-child(5){
+					display: none;
+				}
+				.binnerauto{
+					width: 100%;
+					height: auto;
+				}
+				.bg{
+					height: auto;
+					background: none;
+				}
+				/*main*/
+				/*article*/
+				article{
+					width: 100%;
+					float: none;
+				}
+				/*aside*/
+				aside{
+					width: 100%;
+				}
+				aside .center img{
+					width: 20%;
+					margin-right: 2%;
+				}
+				aside .center p{
+					float: none;
+					width: 100%;
+					line-height: 30px;
+				}
+				aside ul{
+					margin-bottom: 28px;
+				}
+				footer p{
+					display: none;
+				}
+			}
+			
+			
+			
+			
+			
+			
+			/*iphone*/
+			@media screen and (max-width:640px) {
+				.container{
+					width: 100%;
+				}
+				header{
+		  			background: url(img/index_07.png) no-repeat ;
+					height: 50px;
+				}
+				header ul{
+					display: none;
+				}
+				nav .img{
+					display: none;
+				}
+				.nav ul{
+					float: left;
+				}
+				nav .none{
+					display: none;
+				}
+				.binnerauto{
+					width: 100%;
+					height: auto;
+				}
+				.bg{
+					height: auto;
+					background: none;
+				}
+				/*main*/
+				/*article*/
+				article{
+					width: 100%;
+					float: none;
+				}
+				/*aside*/
+				aside{
+					width: 100%;
+				}
+				aside .center img{
+					margin-right: 2%;
+				}
+				aside .center p{
+					float: none;
+					width: 100%;
+				}
+				/*footer*/
+				footer ul{
+					display: none;
+				}
+				footer p{
+					color: white;
+					padding: 10px 0;
+					background:#007D6B;
+				}
+				
+			}
+		</style>
+	</head>
+	<body>
+		<header class="container">
+			<ul class="clearfix">
+				<li><img src="img/list_03-11_03.png" class="img1"/><a href="">设为首页</a></li>
+				<li><img src="img/list_03-11_03.png" class="img2"/><a href="">加入收藏</a></li>
+				<li><img src="img/list_03-11_03.png" class="img3"/><a href="">联系我们</a></li>
+			</ul>
+		</header>
+		<!--主导导航-->
+		<nav class="big one">
+			<div class="container nav clearfix">
+				<img class="img" src="img/index_07.png" class="img"/>
+				<ul class="clearfix">
+					<li class="none"><a href="">网站首页</a></li>
+					<li><a href="">公司简介</a></li>
+					<li><a href="">新闻动态</a></li>
+					<li><a href="">产品展厅</a></li>
+					<li class="none"><a href="">招商加盟</a></li>
+					<li class="none"><a href="">诚聘英才</a></li>
+					<li class="none"><a href="">联系我们</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!--binner图片-->
+		<div class="big bg">
+		<div class="container">
+			<img class="binnerauto" src="img/index_11.png"/>
+		</div>
+		</div>
+		<!--main-->
+		<div class="container clearfix">
+		<!--产品系列-->
+			<article>
+				<h4 class="clearfix">PRODOUCTS产品系列<span><img src="img/index_20.png"/></span></h4>
+				<ul class="clearfix">
+					<li><img src="img/index_29.png"/></li>
+					<li><img src="img/index_31.png"/></li>
+					<li><img src="img/index_33.png"/></li>
+				</ul>
+			</article>
+			<!--新闻动态-->
+			<aside>
+				<h4 class="clearfix">NEWS新闻表单<span><img src="img/index_20.png"/></span></h4>
+				<!--左图片右文字部分-->
+				<div class="center clearfix">
+					<img src="img/index_26.png"/>
+					<p>杭州某某纺织品公司是一家专业经营家用纺织品的企业，公司在产品开发、设计、生产制造、品牌建立、市场营销方面实行一体化策略，并形成规模兼独具特色的家纺企业。工业园区总占地160亩，集专家设计、办公、生产、仓储、物流、员工食宿于一体，拥有先进生产设备、现代办公设施。在产品特色</p>
+				</div>
+				<ul>
+					<li><a href="#">投资者长期看好家纺行业 家纺企业龙头受关注家纺行业 家</a><span>2018-11-9</span></li>
+					<li><a href="#">全面实施国际质量管理和质量保证体家纺家纺行业 家行业 家际质量</a><span>2018-11-9</span></li>
+					<li><a href="#">实施ISO9000、2000国际质量管理和质家纺行业 家量保证体系</a><span>2018-11-9</span></li>
+				</ul>
+			</aside>
+		</div>
+		<div class="big">
+			<footer>
+			<ul>
+				<li><a href="">关于我们</a><span>|</span></li>
+				<li><a href="">联系我们</a><span>|</span></li>
+				<li><a href="">客户留言</a><span>|</span></li>
+				<li><a href="">加盟申请</a><span>|</span></li>
+				<li><a href="">诚聘英才</a><span>|</span></li>
+				<li><a href="">友情链接</a></li>
+			</ul>
+			<p>版权所有Copyright(C)2005-2017 格莱科技</p>
+		</footer>
+		</div>
+	</body>
+</html>

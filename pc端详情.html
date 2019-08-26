@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.big{
+				width: 100%;
+			}
+			.container{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.clearfix{
+				overflow: hidden;
+			}
+			/*导航*/
+			header{
+				height: 20px;
+			}
+			header ul{
+				float: right;
+			}
+			header ul li{
+				position: relative;
+				list-style: none;
+				float: left;
+				padding-left:16px ;
+				margin-left: 20px;
+			}
+			header ul li img{
+				position: absolute;
+			}
+			header ul li .img1{
+				top: 5px;
+				left: 0;
+			}
+			header ul li .img2{
+				top: -35px;
+				left: 0;
+			}
+			header ul li .img3{
+				bottom: 5px;
+				left: 0;
+			}
+			header ul a{
+				font-size: 13px;
+				text-decoration: none;
+			}
+			header ul li a:hover{
+				color: greenyellow;
+			}
+			
+			/*主导导航*/
+			.one img{
+				background: white;
+				padding:5px;
+				vertical-align: bottom;
+			}
+			.one{
+				background:#007D6B;
+			}
+			.nav ul{
+				float: right;
+			}
+			.nav ul li{
+				float: left;
+			}
+			.nav ul li a{
+				display: inline-block;
+				padding: 15px;
+				color: white;
+				border-right: 1px solid white;
+			}
+			/*binner*/
+			.bg{
+				background: url(img/10.png) repeat;
+				height: 300px;
+			}
+			/*main*/
+			/*aside*/
+			aside{
+				border: 1px solid #007d6b;
+				float: left;
+				width: 25%;
+				margin-top: 20px;
+			}
+			aside ul li:first-child {
+				list-style-type: square!important;
+				color: white;
+				margin-left: 30px;
+			}
+			aside ul li{
+				margin: 0 10px;
+				
+			}
+			aside ul:first-child{
+				margin-bottom: 15px;
+			}
+			aside ul:nth-child(2){
+				margin-bottom: 50px;
+			}
+			aside ul .form{
+				margin: 10px 13px;
+			}
+			aside ul li:not(.not){
+				font-size: 10px;
+				color: white;
+				padding: 10px 5px;
+				border-bottom: 1px dotted black;
+			}
+			aside ul li img{
+				padding: 0 10px;
+			}
+			aside ul .fist{
+				background: #007D6B;
+				border: 1px solid white;
+				padding: 2px 0;
+			}
+			aside ul li:first-child a{
+				color: white;
+			}
+			/*article*/
+			article{
+				float: right;
+				width: 70%;
+			}
+			article .top{
+				padding: 10px 0;
+				position: relative;
+				border-bottom: 2px solid #007D6B;
+			}
+			.top p img{
+				position: absolute;
+				top: 15px;
+				left: 0;
+			}
+			.top p{
+				color: #007D6B;
+				padding-left: 20px;
+				float: left;
+			}
+			.top span{
+				float: right;
+			}
+			.bottom{
+				width: 95%;
+				margin: 0 auto;
+			}
+			.bottom h2{
+				text-align: center;
+				padding: 10px 0 20px 0;
+			}
+			.bottom img{
+				width: 100%;
+			}
+			.bottom h4{
+				padding-top: 9px;
+				padding-bottom: 13px;
+			}
+			.bottom p{
+				font-family: 正楷;
+				font-size: 15px;
+				line-height: 29px;
+			}
+			.bottom p:last-child{
+				padding-bottom: 30px;
+			}
+			/*底部*/
+			footer{
+				margin: 0 auto;
+				text-align: center;
+				width: 100%;
+			}
+			footer ul{
+				background: #007D6B;
+			}
+			footer li{
+				display: inline-block;
+				color: white;
+				padding: 16px 0;
+			}
+			footer li a{
+				padding: 0 5px;
+				color: white;
+			}
+			footer li a:hover{
+				color: yellow;
+			}
+			/*input*/
+			.input{
+				display: none;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			/*ipad*/
+			@media screen and (min-width:640px)  and (max-width:788px){
+				.container{
+					width: 100%;
+				}
+				/*主导导航*/
+				.nav img{
+					float: left;
+				}
+				.nav ul {
+					float: left;
+				}
+				.nav ul li:nth-child(1){
+					display: none;
+				}
+				.nav ul li:nth-child(5){
+					display: none;
+				}
+				.binnerauto{
+					width: 100%;
+					height: auto;
+				}
+				.bg{
+					height: auto;
+					background: none;
+				}
+				/*main*/
+				aside .form input{
+					width: 70%;	
+				}
+				footer {
+					display: none;
+				}
+			
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			/*iphone*/
+			@media screen and (max-width:640px) {
+				.container{
+					width: 100%;
+				}
+				header{
+		  			background: url(img/index_07.png) no-repeat;
+					height: 50px;
+				}
+				header ul{
+					display: none;
+				}
+				nav .img{
+					display: none;
+				}
+				.nav ul{
+					float: left;
+				}
+				nav .none{
+					display: none;
+				}
+				.binnerauto{
+					width: 100%;
+					height: auto;
+				}
+				.bg{
+					height: auto;
+					background: none;
+				}
+				/*input*/
+				.input{
+					margin:10px 0 5px 0 ;
+					position: relative;
+					display: block;
+					background: #ccc;
+					text-align: left;
+					padding-left: 15px;
+					height: 45px;
+					line-height: 45px;
+				}
+				.input input{
+					padding: 5px 0 5px 5px;
+				}
+				.input img{
+					border: 1px solid #c6c6c6;
+					display: inline-block;
+					margin-left: 10px;
+					line-height: 40px;
+					position: absolute;
+					top: 13px;
+					
+				}
+				/*aside*/
+				aside{
+					width: 100%;
+					display: none;
+                 }
+				/*article*/
+				article{
+					position: none;
+					width: 100%;
+				}
+				/*footer*/
+				footer ul{
+					display: none;
+				}
+				footer p{
+					color: white;
+					padding: 10px 0;
+					background:#007D6B;
+				}
+				
+			}
+			
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<header class="container">
+			<ul class="clearfix">
+				<li><img src="img/list_03-11_03.png" class="img1"/><a href="">设为首页</a></li>
+				<li><img src="img/list_03-11_03.png" class="img2"/><a href="">加入收藏</a></li>
+				<li><img src="img/list_03-11_03.png" class="img3"/><a href="">联系我们</a></li>
+			</ul>
+		</header>
+		<!--主导导航-->
+		<nav class="big one">
+			<div class="container nav clearfix">
+				<img class="img" src="img/index_07.png" class="img"/>
+				<ul class="clearfix">
+					<li class="none"><a href="">网站首页</a></li>
+					<li><a href="">公司简介</a></li>
+					<li><a href="">新闻动态</a></li>
+					<li><a href="">产品展厅</a></li>
+					<li class="none"><a href="">招商加盟</a></li>
+					<li class="none"><a href="">诚聘英才</a></li>
+					<li class="none"><a href="">联系我们</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!--binner图片-->
+		<div class="big bg">
+		<div class="container">
+			<img class="binnerauto" src="img/index_11.png"/>
+		</div>
+		</div>
+		<div class="container clearfix">
+			<div class="input">
+				产品搜索：
+				<input type="text" placeholder="关键字" />
+				<img src="img/list_15.png"/>
+			</div>
+			<aside>
+				<ul>
+					<div class="fist">
+					<li class="not"><a href="">产品分类</a></li>
+					</div>
+					<li><img src="img/list_07.png"/><a href="">床上用品</a></li>
+					<li><img src="img/list_07.png"/><a href="">窗帘</a></li>
+					<li><img src="img/list_07.png"/><a href="">家饰用品</a></li>
+					<li><img src="img/list_07.png"/><a href="">家居服饰</a></li>
+					<li><img src="img/list_07.png"/><a href="">其他</a></li>
+				</ul>
+				<ul>
+					<div class="fist">
+					<li class="not"><a href="">资讯搜索</a></li>	
+					</div>
+					<div class="form">
+						<input type="text" placeholder="关键字" />
+					<button>搜索</button>
+					</div>
+				</ul>
+			</aside>
+			
+			<article>
+				<div class="top clearfix" >
+					<p><img src="img/list_03-11_03.png"/>产品展厅</p>
+					<span>您现在的位置：<a href="">首页</a>><a href="">产品展厅</a></span>
+				</div>
+				<div class="bottom">
+					<h2>床上用品</h2>
+					<img src="img/7.jpg"/>
+					<h4>产品名称：七孔被</h4>
+					<p>效果：111111</p>
+					<p>属性：xcscsdd</p>
+					<p>价格：200000000-788888</p>
+					<p>简介：杭州某某纺织品公司是一家专业经营家用纺织品的企业，公司在产品开发、设计、生产制造、品牌建立、市场营销方面实行一体化策略，并形成规模兼独具特色的家纺企业。工业园区总占地160亩，集专家设计、办公、生产、仓储、物流、员工食宿于一体，拥有先进生产设备、现代办公设施。在产品特色</p>
+					<p>优点：杭州某某纺织品公司是一家专业经营家用纺织品的企业，公司在产品开发、设计、生产制造、品牌建立、市场营销方面实行一体化策略，并形成规模兼独具特色的用纺织品的企业，杭州某某纺织品公司是一家专业经营家用纺织品的企业，公司在产品开发、设计、生产制造、品牌建立、市场营销方面实行一体化策略，并形成规模兼独具特色的公司在产品开发、设计、生产制造、品牌建立、市场营销方面实行一体化策略，并形成规模兼独具特色的家纺企业。工业园区总占地160亩，集专家设计、办公、生产、仓储、物流、员工食宿于一体，拥有先进生产设备、现代办公设施。在产品特色....
+					</p>
+				</div>
+			</article>
+		</div>
+		
+		<div class="big">
+			<footer>
+			<ul>
+				<li><a href="">关于我们</a><span>|</span></li>
+				<li><a href="">联系我们</a><span>|</span></li>
+				<li><a href="">客户留言</a><span>|</span></li>
+				<li><a href="">加盟申请</a><span>|</span></li>
+				<li><a href="">诚聘英才</a><span>|</span></li>
+				<li><a href="">友情链接</a></li>
+			</ul>
+			<p>版权所有Copyright(C)2005-2017 格莱科技</p>
+		</footer>
+		</div>
+	</body>
+</html>
